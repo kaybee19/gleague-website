@@ -1,0 +1,850 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="gl-home.css">
+    <link rel="stylesheet" href="loaders.min.css">
+    <link rel="stylesheet" href="loaders.css">
+	<link rel="stylesheet" href="owlcarousel\dist\assets\owl.carousel.min.css">
+	<link rel="stylesheet" href="owlcarousel\dist\assets\owl.theme.default.min.css">
+    <title>G-League Offcial Website</title>
+</head>
+<style type="text/css">
+	html {
+		scroll-behavior: smooth;
+	}
+</style>
+<body>
+<!-- Preloader --
+<section id="intro">
+<div class="loaders w-100 h-100 d-flex align-items-center justify-content-center">
+  <div class="loader">
+    <div class="loader-inner w-100 d-flex justify-content-center ball-grid-pulse" style="transform: scale(1,1);">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+  </div>
+</div>
+</div>
+</section>
+<!-- End Preloader -->
+<!-- Top -->
+<div id="top">
+<div id="nav" class="container-fluid" style="position: fixed; z-index: 100000;">
+<nav class="container navbar navbar-expand-lg navbar-light" style="width: 100vw;">
+  <a class="navbar-brand mr-0" href=""><img src="gleague-name-white.png"></a>
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+        <a class="nav-link" href="#top" onclick="closeNav()">Home</a>
+        <a class="nav-link" href="#about" onclick="closeNav()">About</a>
+        <a class="nav-link" href="#games" onclick="closeNav()">Games</a>
+        <a class="nav-link" href="#win-sec" onclick="closeNav()">Winners</a>
+  </div>
+</div>
+<span id="mobile-nav" onclick="openNav()">&#9776;</span>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#top">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#about">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#games">Games</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#win-sec">Winners</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#contact" data-toggle="modal" data-target="#contactmodal">Contact</a>
+      </li>
+    </ul><hr class="visibility">
+    <div class="visibility">
+    	<a href=""><i class="fab fa-facebook fa-lg"></i></a>
+    	<a href=""><i class="fab fa-instagram fa-lg"></i></a>
+    	<a href=""><i class="fab fa-twitter fa-lg"></i></a>
+    </div>
+  </div>
+</nav>
+</div>
+<!-- End Nav -->
+<div id="carousel">
+<div class="row">
+<div class="col-10 col-lg-4 offset-1 offset-lg-3" style="position: absolute; z-index: 10000; transform: translateY(-35%);">
+	<div id="text-caro" class="carousel slide"  data-pause="false" data-ride="carousel">
+	  <div class="carousel-inner">
+	    <div class="carousel-item active">
+	      	<h2 class="display-1 text-white">G-LEAGUE<br>
+	      	<h1 class="display-4 text-white">Become A<br>
+	      	Member Of Our<br>
+	      	Community</h1></h2>
+	    </div>
+	    <div class="carousel-item">
+	    	<h2 class="display-1 text-white">OUR GAMES<br>
+	    	<h1 class="display-4 text-white">Scroll Down<br>
+	    	To Find Out
+	    	<br>More</h1></h2>
+	    </div>
+	    <div class="carousel-item">
+	      	<h2 class="display-1 text-white">OUR EVENTS<br>
+	      	<h1 class="display-4 text-white">Follow Our<br>
+	      	Social Media<br>
+	      	For Updates</h1></h2>
+	    </div>
+	  </div>
+	</div>
+	</div>
+<div class="col-2 offset-9" style="position: absolute; transform: translateY(-125%)">
+	<a href="#hero"><button type="button" class="btn btn-lg btn-light visibility">Read More</button></a>
+</div>
+</div>
+<div class="row" id="caro-images">
+	<div class="col-2">
+	<div id="carousel-1" class="carousel slide d-flex h-100 align-items-end" data-pause="false" data-ride="carousel">
+	  <div class="carousel-inner">
+	    <div class="carousel-item active">
+	      <div class="caro-3"></div>
+	    </div>
+	    <div class="carousel-item">
+	      <div class="caro-1"></div>
+	    </div>
+	    <div class="carousel-item">
+	      <div class="caro-2"></div>
+	    </div>
+	  </div>
+	</div>
+	</div>
+	<div class="col-10 offset-1 col-lg-8 offset-lg-0">
+	<div id="carousel-2" class="carousel slide" data-pause="false" data-ride="carousel">
+	  <div class="carousel-inner">
+	    <div class="carousel-item active">
+	      <div class="caro-1"></div>
+	  	</div>
+	    <div class="carousel-item">
+	      <div class="caro-2"></div>
+	    </div>
+	    <div class="carousel-item">
+	      <div class="caro-3"></div>
+	    </div>
+	  </div>
+	</div>
+	</div>
+	<div class="col-2">
+	<div id="carousel-3" class="carousel slide d-flex h-100 align-items-end" data-pause="false" data-ride="carousel">
+	  <div class="carousel-inner caro-pad">
+	    <div class="carousel-item active">
+	      <div class="caro-2"></div>
+	    </div>
+	    <div class="carousel-item">
+	      <div class="caro-3"></div>
+	    </div>
+	    <div class="carousel-item">
+	      <div class="caro-1"></div>
+	    </div>
+	  </div>
+	</div>
+	</div>
+</div>
+</div>
+</div>
+<!-- End Top -->
+<!-- Hero -->
+<section id="hero">
+<div class="container">
+<div class="row">
+	<div class="col-lg-6 col-10 offset-1 offset-lg-0">
+		<h6 class="text-uppercase text-muted my-0">coming soon</h6>
+		<h1 class="display-1">4th EDITION</h1>
+		<p class="display-4">Go Hard Or Go Home</p>
+		<p class="lead">Excited about our upcoming gaming edition? Subscribe to our newsletter to keep up to date, or you can reach out to us for more inquiries. Tournament information about venue and dates will be released early 2020. Be sure to look out for freebies, gifts and more on our social media.</p>
+		<button class="btn btn-light btn-lg mr-3">Subscribe</button>
+		<button class="btn btn-dark btn-lg mx-0" data-toggle="modal" data-target="#contactmodal">Contact Us</button>
+	</div>
+	<div class="col-12 col-lg-5 offset-lg-1">
+		<div id="games-caro" class="carousel" data-pause="false" data-ride="">
+		  <div class="w-100 d-flex align-items-center justify-content-end">
+		  	<a id="prev3" class="prev mr-5" data-slide="prev" href="#games-caro">&lt;</a>
+		  	<a id="next3" class="next" data-slide="next" href="#games-caro">&gt;</a>
+		  </div>
+		  <div class="carousel-inner">
+		    <div class="carousel-item active" data-interval="false">
+		      <div class="game-1"></div>
+		    </div>
+		    <div class="carousel-item" data-interval="false">
+		      <div class="game-2"></div>
+		    </div>
+		    <div class="carousel-item" data-interval="false">
+		      <div class="game-3"></div>
+		    </div>
+		    <div class="carousel-item" data-interval="false">
+		      <div class="game-4"></div>
+		    </div>
+		  </div>
+		</div>		
+	</div>
+</div>
+</div>
+</section>
+<!-- End Hero -->
+<!-- About -->
+<section id="about-sec">
+<div class="container" id="about">
+<h1 class="text-uppercase head">about</h1>
+<div class="text-center">
+	<h1 class="text-uppercase display-3 font-weight-bold">Welcome to<br>G-LEAGUE</h1>
+	<img src="images/about/fortnite_characters.png" class="text-center my-5">
+</div>
+<div class="col-lg-10 offset-lg-1 col-12 text-center">
+	<p class="lead">The Gamers League, G-League, is an e-sports organization that was launched in 2017. Operating out of Abuja, we are the first registered e-sports outfit in Nigeria. Our goal is to create a community of gamers who come together and compete in gaming tournaments, and the promotion of e-sports in Africa. Since our launch, our membership has been steadily increasing, with over 300+ active members today.</p><br>
+	<p class="lead"> We host tournaments, gaming party's, and sporting events throughout the year. We are always giving out prize pools, gifts and much more to our members. Subscribe and join us today to be part of one of Africa's fastest growing e-sports and gaming communities.</p>
+</div>
+</div>
+<div class="container-fluid">
+<div class="row justify-content-center" id="about-img">
+	<div class="col-sm-3 col-8 text-center font-weight-bold" id="about-img1">
+		<div class="overlay1 d-flex align-items-center justify-content-center">
+		<div class="text-uppercase"><h1>gaming<br>community</h1>
+		<p class="blockquote">hang out and play<br>with different gamers</p></div>
+	</div>
+	</div>
+	<div class="col-sm-3 col-8 text-center font-weight-bold" id="about-img2">
+		<div class="overlay2 d-flex align-items-center justify-content-center">
+		<div class="text-uppercase"><h1>become a<br>champion</h1>
+		<p class="blockquote">do you have<br>what it takes to win</p></div>
+	</div>
+	</div>
+	<div class="col-sm-3 col-8 text-center font-weight-bold" id="about-img3">
+		<div class="overlay3 d-flex align-items-center justify-content-center">
+		<div class="text-uppercase"><h1>NEW<br> TITLES</h1>
+		<p class="blockquote">always searching for<br>the best games to play</p></div>
+	</div>
+	</div>
+</div>
+</section>
+<!-- End About -->
+<!-- Games -->
+<section id="games">
+<div class="container">
+<p class="rules text-center text-uppercase">learn our</p>
+<h1 class="display-4 my-0 py-0 text-center">GAME RULES</h1>
+<div class="container cont">
+	<nav class="nav nav-pills nav-justified" id="tabs-list" role="tablist">
+		<a class="nav-item nav-link" id="fifa-game-tab" data-toggle="pill" href="#fifa-game" role="tab">FIFA20</a>
+		<a class="nav-item nav-link" id="cod-game-tab" data-toggle="pill" href="#cod-game" role="tab">CALL OF DUTY: WW2</a>
+		<a class="nav-item nav-link" id="mk-game-tab" data-toggle="pill" href="#mk-game" role="tab">MORTAL KOMBAT 11</a>
+		<a class="nav-item nav-link" id="fortnite-game-tab" data-toggle="pill" href="#fortnite-game" role="tab"><p>FORTNITE <b>NEW</b></p></a>
+	</nav>
+<div class="tab-content" id="game-content">
+	<div class="tab-pane text-uppercase text-center active show fade" role="tabpanel">
+	<h6 class="my-5">please select a game to view rules and information</h6>
+</div>
+<div class="tab-pane text-uppercase fade" id="fifa-game" role="tabpanel">
+	<div class="row mt-3">
+		<div class="col-lg-6 col-12">
+			<div class="btn btn-outline-light disabled">SPORTS</div>
+			<div class="btn btn-outline-light disabled">32 contestants</div>
+			<div class="btn btn-outline-light disabled">ps4</div>
+		<div class="pad offset-1 offset-lg-0">
+			<p class="lead" style="color: #a90000">Single Knockout</p>
+			<h4 class="font-weight-bold my-3">prize pool: N100,000.00</h4>
+			<p>6 minutes (half)</p>
+		</div>
+		</div>
+		<div class="col-lg-6 col-12">
+			<h3 class="text-uppercase text-center"><u>format</u></h3>
+			<p class="offset-1 offset-lg-3">1v1 players<br>
+				No team changes<br>
+				tactical defending<br>
+				only club teams<br>
+				extra time & penalty's available<br>
+				2 minutes team selection
+			</p>
+		</div>
+	</div>
+</div>
+<div class="tab-pane text-uppercase fade" id="cod-game" role="tabpanel">
+	<div class="row">
+		<div class="col-lg-6 col-12">
+			<div class="btn btn-outline-light disabled">shooter</div>
+			<div class="btn btn-outline-light disabled">32 contestants</div>
+			<div class="btn btn-outline-light disabled">pc</div>
+		<div class="pad">
+			<p class="lead" style="color: #a90000">Team battle</p>
+			<h4 class="font-weight-bold my-3">prize pool: N50,000.00</h4>
+			<p>20 minutes</p>
+		</div>
+		</div>
+		<div class="col-lg-6 col-12">
+			<h3 class="text-uppercase text-center"><u>format</u></h3>
+			<p class="offset-1 offset-lg-3">4v4 teams<br>
+				random map<br>
+				100 kill win limit<br>
+				hardcore mode enabled<br>
+				no re-spawn limit<br>
+				team must select captain<br>
+				losing team is knocked out
+			</p>
+		</div>
+	</div>
+</div>
+<div class="tab-pane text-uppercase fade" id="mk-game" role="tabpanel">
+	<div class="row">
+		<div class="col-lg-6 col-12">
+			<div class="btn btn-outline-light disabled">fighting</div>
+			<div class="btn btn-outline-light disabled">10/20 contestants</div>
+			<div class="btn btn-outline-light disabled">ps4</div>
+		<div class="pad">
+			<p class="lead" style="color: #a90000">Ladder</p>
+			<h4 class="font-weight-bold my-3">prize pool: N10,000.00 (5 pots)</h4>
+			<p>2 minutes (round)</p>
+		</div>
+		</div>
+		<div class="col-lg-6 col-12">
+			<h3 class="text-uppercase text-center"><u>format</u></h3>
+			<p class="offset-1 offset-lg-3">1v10  players<br>
+				random stage select<br>
+				interactables on<br>
+				best 2 of 3 wins<br>
+				10 wins prize pool<br>
+				no win limit (until pool finishes)<br>
+				winner must keep character
+			</p>
+		</div>
+	</div>
+</div>
+<div class="tab-pane text-uppercase fade" id="fortnite-game" role="tabpanel">
+	<div class="row">
+		<div class="col-lg-6 col-12">
+			<div class="btn btn-outline-light disabled">battle royal</div>
+			<div class="btn btn-outline-light disabled">16/32 contestants</div>
+			<div class="btn btn-outline-light disabled">ps4</div>
+		<div class="pad">
+			<p class="lead" style="color: #a90000">team battle</p>
+			<h4 class="font-weight-bold my-3">prize pool: N50,000.00</h4>
+			<p>no time limit</p>
+		</div>
+		</div>
+		<div class="col-lg-6 col-12">
+			<h3 class="text-uppercase text-center"><u>format</u></h3>
+			<p class="offset-1 offset-lg-3">2v2 duos<br>
+				random stage select<br>
+				normal game mode (duos only)<br>
+				best 2 of 3 wins<br>
+				losing team is eliminated<br>
+				no restrictions<br>
+			</p>
+		</div>
+	</div>
+</div>
+</div>
+</div>
+<div class="d-flex">
+<div class="loop owl-carousel owl-theme">
+	<div class="item text-uppercase text-center">
+		<div><img src="images/games/fifa-20.png" class="img-fluid"></div>
+	</div>
+	<div class="item text-uppercase text-center">
+		<div><img src="images/games/fnight.jpg" class="img-fluid"></div>
+	</div>
+	<div class="item text-uppercase text-center">
+		<div><img src="images/games/mk11.jpg" class="img-fluid"></div>
+	</div>
+	<div class="item text-uppercase text-center">
+		<div><img src="images/games/cod-ww2.png" class="img-fluid"></div>
+	</div>
+</div>
+</div>
+</div>
+<h4 class="font-weight-bold text-center text-uppercase">subscribe to g-league</h4>
+<div class="d-flex align-items-center justify-content-center">
+    	<input type="email" class="form-control form-control-lg mr-3 col-7" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Your Email Address">
+ 		<button type="button" class="btn btn-lg btn-danger">Subscribe!</button>
+ </div>
+</section>
+<!-- End Games -->
+<!-- Winners -->
+<section id="win">
+<div class="container" id="win-sec">
+	<h1 class="text-uppercase head">winners</h1>
+<div class="d-flex justify-content-end">
+<div class="btn-group dropleft text-uppercase">
+  <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    SELECT EDITION
+  </button>
+  <div class="dropdown-menu">
+  	<nav class="nav nav-pills" id="win-tablist" role="tablist">
+    <a class="dropdown-item active" id="third-edi-tab" data-toggle="pill" href="#third-edi" role="tab">3RD EDITION</a>
+    <a class="dropdown-item" id="second-edi-tab" data-toggle="pill" href="#second-edi" role="tab">2ND EDITION</a>
+    <a class="dropdown-item" id="first-edi-tab" data-toggle="pill" href="#first-edi" role="tab">1ST EDITION</a>
+	</nav>
+  </div>
+</div>
+</div>
+</div>
+
+<div class="tab-content" id="win-content">
+<div class="tab-pane fade active show" id="third-edi" role="tabpanel">
+<h1 class="display-1 text-center">THIRD EDITION WINNERS</h1>
+<div class="col-lg-7 col-12 col-md-10 text-uppercase mx-auto mt-5">
+<div class="card">
+<h2>FIFA19 champion</h2>
+<hr>
+  <div class="row no-gutters">
+    <div class="col-sm-4 col-10 offset-1 offset-sm-0" style="overflow: hidden!important;"><div class="c-img1"></div>
+    </div>
+    <div class="col-sm-7 offset-1">
+      	<div class="card-body">
+      		<div class="row">
+      		<div class="col-6">
+      		<p class="text-muted">name</p>
+        	<h3 class="card-title font-weight-bold" style="color: #a90000">Farouk Manzo</h3></div>
+      		<div class="col-6">
+      		<p class="text-muted">game name</p>
+        	<h3 class="card-title font-weight-bold" style="color: #a90000">Yung Naldo</h3></div>
+        	</div>
+     		<div class="row mt-4">
+      		<div class="col-4">
+      		<p class="text-muted">history</p>
+        	<h4 class="card-title">2nd entry</h4></div>
+      		<div class="col-4">
+      		<p class="text-muted">goals</p>
+        	<h4 class="card-title">24</h4></div>
+      		<div class="col-4">
+      		<p class="text-muted">conceded</p>
+        	<h4 class="card-title">8</h4></div>
+        	</div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="col-lg-7 col-12 col-md-10 text-uppercase mx-auto mt-5">
+<div class="card">
+<h2>mortal KOMBAT 11 champion</h2>
+<hr>
+  <div class="row no-gutters">
+    <div class="col-sm-4 col-10 offset-1 offset-sm-0" style="overflow: hidden!important;"><div class="c-img2"></div>
+    </div>
+    <div class="col-sm-7 offset-1">
+      	<div class="card-body text-uppercase">
+      		<div class="row">
+      		<div class="col-6">
+      		<p class="text-muted">name</p>
+        	<h3 class="card-title font-weight-bold" style="color: #a90000">JOEL SIMAN</h3></div>
+      		<div class="col-6">
+      		<p class="text-muted">game name</p>
+        	<h3 class="card-title font-weight-bold" style="color: #a90000">N/A</h3></div>
+        	</div>
+     		<div class="row mt-4">
+      		<div class="col-4">
+      		<p class="text-muted">history</p>
+        	<h4 class="card-title">2nd entry</h4></div>
+      		<div class="col-4">
+      		<p class="text-muted">ladders won</p>
+        	<h4 class="card-title">3</h4></div>
+      		<div class="col-4">
+      		<p class="text-muted">flawless wins</p>
+        	<h4 class="card-title">6</h4></div>
+        	</div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="col-lg-7 col-12 col-md-10 text-uppercase mx-auto mt-5">
+<div class="card">
+<h2>call of duty: ww2 champion</h2>
+<hr>
+  <div class="row no-gutters">
+    <div class="col-sm-4 col-10 offset-1 offset-sm-0" style="overflow: hidden!important;"><div class="c-img3"></div>
+    </div>
+    <div class="col-sm-7 offset-1">
+      	<div class="card-body">
+      		<div class="row t">
+      		<div class="col-6">
+      		<p class="text-muted">team name</p>
+        	<h3 class="card-title font-weight-bold mt-0 pt-0" style="color: #a90000">magnificent 4</h3></div>
+      		<div class="col-6">
+      		<p class="text-muted">captain</p>
+        	<h3 class="card-title font-weight-bold mt-0 pt-0" style="color: #a90000">somto rodney</h3></div>
+        	</div>
+     		<div class="row mt-4">
+      		<div class="col-4">
+      		<p class="text-muted">history</p>
+        	<h4 class="card-title">1st entry</h4></div>
+      		<div class="col-4">
+      		<p class="text-muted">kills</p>
+        	<h4 class="card-title">1782</h4></div>
+      		<div class="col-4">
+      		<p class="text-muted">k/d ratio</p>
+        	<h4 class="card-title">1.71</h4></div>
+        	</div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+
+<div class="tab-pane fade" id="second-edi" role="tabpanel">
+<h1 class="display-1 text-center">SECOND EDITION WINNERS</h1>
+<div class="col-lg-7 col-12 col-md-10 text-uppercase mx-auto mt-5">
+<div class="card">
+<h2>FIFA19 champion</h2>
+<hr>
+  <div class="row no-gutters">
+    <div class="col-sm-4 col-10 offset-1 offset-sm-0" style="overflow: hidden!important;"><div class="c-img4"></div>
+    </div>
+    <div class="col-sm-7 offset-1">
+      	<div class="card-body">
+      		<div class="row t">
+      		<div class="col-6">
+      		<p class="text-muted">name</p>
+        	<h3 class="card-title font-weight-bold mt-0 pt-0" style="color: #a90000">precious tari</h3></div>
+      		<div class="col-6">
+      		<p class="text-muted">game name</p>
+        	<h3 class="card-title font-weight-bold mt-0 pt-0" style="color: #a90000">king slayer</h3></div>
+        	</div>
+     		<div class="row mt-4">
+      		<div class="col-4">
+      		<p class="text-muted">history</p>
+        	<h4 class="card-title">2nd entry</h4></div>
+      		<div class="col-4">
+      		<p class="text-muted">goals</p>
+        	<h4 class="card-title">20</h4></div>
+      		<div class="col-4">
+      		<p class="text-muted">conceded</p>
+        	<h4 class="card-title">3</h4></div>
+        	</div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="col-lg-7 col-12 col-md-10 text-uppercase mx-auto mt-5">
+<div class="card">
+<h2>mortal KOMBAT 11 champion</h2>
+<hr>
+  <div class="row no-gutters">
+    <div class="col-sm-4 col-10 offset-1 offset-sm-0" style="overflow: hidden!important;"><div class="c-img5"></div>
+    </div>
+    <div class="col-sm-7 offset-1">
+      	<div class="card-body text-uppercase">
+      		<div class="row t">
+      		<div class="col-6">
+      		<p class="text-muted">name</p>
+        	<h3 class="card-title font-weight-bold" style="color: #a90000">JOEL SIMAN</h3></div>
+      		<div class="col-6">
+      		<p class="text-muted">game name</p>
+        	<h3 class="card-title font-weight-bold" style="color: #a90000">N/A</h3></div>
+        	</div>
+     		<div class="row mt-4">
+      		<div class="col-4">
+      		<p class="text-muted">history</p>
+        	<h4 class="card-title">1st entry</h4></div>
+      		<div class="col-4">
+      		<p class="text-muted">ladders won</p>
+        	<h4 class="card-title">4</h4></div>
+      		<div class="col-4">
+      		<p class="text-muted">flawless wins</p>
+        	<h4 class="card-title">10</h4></div>
+        	</div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+<div class="tab-pane fade" id="first-edi" role="tabpanel">
+<h1 class="display-1 text-center">FIRST EDITION WINNERS</h1>
+<div class="col-lg-7 col-12 col-md-10 text-uppercase mx-auto mt-5">
+<div class="card">
+<h2>FIFA19 champion</h2>
+<hr>
+  <div class="row no-gutters">
+    <div class="col-sm-4 col-10 offset-1 offset-sm-0" style="overflow: hidden!important;"><div class="c-img6"></div>
+    </div>
+    <div class="col-sm-7 offset-1">
+      	<div class="card-body">
+      		<div class="row t">
+      		<div class="col-6">
+      		<p class="text-muted">name</p>
+        	<h3 class="card-title font-weight-bold" style="color: #a90000">malik malcom</h3></div>
+      		<div class="col-6">
+      		<p class="text-muted">game name</p>
+        	<h3 class="card-title font-weight-bold" style="color: #a90000">ruthless sniper</h3></div>
+        	</div>
+     		<div class="row mt-4">
+      		<div class="col-4">
+      		<p class="text-muted">history</p>
+        	<h4 class="card-title">1st entry</h4></div>
+      		<div class="col-4">
+      		<p class="text-muted">goals</p>
+        	<h4 class="card-title">31</h4></div>
+      		<div class="col-4">
+      		<p class="text-muted">conceded</p>
+        	<h4 class="card-title">10</h4></div>
+        	</div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="col-lg-7 col-12 col-md-10 text-uppercase mx-auto mt-5">
+<div class="card">
+<h2>mortal KOMBAT 11 champion</h2>
+<hr>
+  <div class="row no-gutters">
+    <div class="col-sm-4 col-10 offset-1 offset-sm-0" style="overflow: hidden!important;"><div class="c-img7"></div>
+    </div>
+    <div class="col-sm-7 offset-1">
+      	<div class="card-body text-uppercase">
+      		<div class="row t">
+      		<div class="col-6">
+      		<p class="text-muted">name</p>
+        	<h3 class="card-title font-weight-bold" style="color: #a90000">kabir gafai</h3></div>
+      		<div class="col-6">
+      		<p class="text-muted">game name</p>
+        	<h3 class="card-title font-weight-bold" style="color: #a90000">minus-zero</h3></div>
+        	</div>
+     		<div class="row mt-4">
+      		<div class="col-4">
+      		<p class="text-muted">history</p>
+        	<h4 class="card-title">1st entry</h4></div>
+      		<div class="col-4">
+      		<p class="text-muted">ladders won</p>
+        	<h4 class="card-title">3</h4></div>
+      		<div class="col-4">
+      		<p class="text-muted">flawless wins</p>
+        	<h4 class="card-title">4</h4></div>
+        	</div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- End Win -->
+<!-- Highlights -->
+<section id="high">
+<div class="container">
+<div class="text-bg"><h1 class="text-uppercase head">highlights</h1></div>
+<h1 class="text-uppercase text-center">highlights</h1>
+<ul class="nav nav-pills text-uppercase justify-content-lg-end justify-content-center" id="high-tab" role="tablist" style="position: relative;">
+  <li class="nav-item">
+    <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">fifa20</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">mk11</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">cod: ww2</a>
+  </li>
+</ul>
+<div class="tab-content" id="high-tabContent">
+<div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+<div class="row">
+ 	<div class="text-uppercase move">
+ 		<div><p class="small m-0 p-0">third edition</p>
+ 		<h2 class="display-4 h-25">best highlights<br>
+ 		of fifa 20</h2></div>
+ 	</div>
+ 	<div class="container vid-cont">
+	 	<div class="col-12 col-lg-10 offset-lg-1">
+	 		<video controls="">
+	 		<source src="rargb.mp4" type="video/mp4">Your browser does not support the video tag.</video>
+	 	</div>
+	</div>
+</div>
+</div>
+<div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+<div class="row">
+ 	<div class="text-uppercase move">
+ 		<div><p class="small m-0 p-0">third edition</p>
+ 		<h2 class="display-4 h-25">best highlights<br>
+ 		of mortal kombat</h2></div>
+ 	</div>
+ 	<div class="container vid-cont">
+	 	<div class="col-12 col-lg-10 offset-lg-1">
+	 		<video controls="">
+	 		<source src="rargb.mp4" type="video/mp4">Your browser does not support the video tag.</video>
+	 	</div>
+	</div>
+</div>
+</div>
+<div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+<div class="row">
+ 	<div class="text-uppercase move">
+ 		<div><p class="small m-0 p-0">third edition</p>
+ 		<h2 class="display-4 h-25">best highlights<br>
+ 		of call of duty</h2></div>
+ 	</div>
+ 	<div class="container vid-cont">
+	 	<div class="col-12 col-lg-10 offset-lg-1">
+	 		<video controls="">
+	 		<source src="rargb.mp4" type="video/mp4">Your browser does not support the video tag.</video>
+	 	</div>
+	</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- End High -->
+<!-- Footer -->
+<section id="footer">
+<div class="row justify-content-center align-items-center">
+</div>
+
+<div id="footer-main">
+<div class="container">
+<div class="row">
+<div class="col-lg-4 col-12">
+	<img src="gleague-logo.png" class="d-flex justify-content-center">
+	<p class="visibility">There are many variations of passages of lorem ipsum available, but the majority have suffered alteration in some form by injected.</p>
+</div>
+<div class="col-10 offset-2 col-sm-9 offset-sm-3 col-lg-3 offset-lg-1">
+<p class="lead font-weight-bold">LINKS</p>
+<div class="row">
+	<span class="col-5">
+<a href="#games">Games</a><br>
+<a href="#win-sec">Winners</a><br>
+<a href="#high">Highlights</a></span>
+	<span class="col-5">
+<a href="#about">About</a><br>
+<a data-toggle="modal" data-target="#contactmodal" href="#contact">Contact</a><br></span>
+</div>
+</div>
+<div class="col-10 offset-sm-2 offset-1 col-lg-4 offset-lg-0">
+<p class="lead font-weight-bold visibility">SUBSCRIBE</p>
+<p>Subsrcibe us now to get the latest news and updates</p>
+<div class="row align-items-center">
+    	<input type="email" class="form-control mr-2 ml-3 col-7" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Your Email Address">
+ 		<button type="button" class="btn btn-danger">Subscribe!</button></div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="contactmodal" tabindex="-1" role="dialog" style="z-index: 100000; position: fixed;">
+  <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header py-0">
+        <h3 class="modal-title pt-4" id="exampleModalCenterTitle">Contact Us</h3>
+        <button type="button" class="mt-0 pt-0 close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true"><h1 style="font-size: 4rem;">&times;</h1></span>
+        </button>
+      </div>
+    <div class="modal-body pt-0">
+	<div class="container shadow col-12">
+	<div class="row">
+		<div class="col-lg-8 py-5 px-5" id="contact-msg">
+		<div class="row">
+			<h3 class="col-6">Send us a Message</h3><i class="col-6 text-right fa fa-envelope-open-text fa-2x"></i></div>
+		<div class="form-row">
+			<div class="form-group col-md-4">
+				<label class="small">First Name</label>
+		    	<input type="" class="form-control border-0 rounded-0">
+			</div>
+		 	<div class="form-group col-md-4 offset-md-2">
+				<label class="small">Last Name</label>
+		    	<input type="text" class="form-control border-0 rounded-0">
+	  		</div>
+	  	</div>
+		<div class="form-row">
+			<div class="form-group col-md-4">
+				<label class="small">Email address</label>
+		    	<input type="" class="form-control border-0 rounded-0">
+			</div>
+		 	<div class="form-group col-md-4 offset-md-2">
+				<label class="small">Phone Number</label>
+		    	<input type="text" class="form-control border-0 rounded-0">
+		  	</div>
+	 	<div class="form-group col-10">
+			<label class="small">Message</label>
+	    	<textarea class="form-control border-0 rounded-0" rows="3"></textarea>
+	  	</div>
+	  	<a href="" class="mt-auto text-right col-2"><i class="fa fa-paper-plane fa-2x"></i></a>
+		</div>
+		</div>
+		<div class="col-lg-4 py-5 px-4 text-white bg-danger" id="contact-info">
+		<h3>Contact Information</h3>
+			<div class="row info">
+	  		<a href="" class="text-center col-2"><i class="fa fa-map-marker-alt fa-2x"></i></a>
+			<p class="lead col-9 my-0 py-0">Abuja, Nigeria</p></div>
+			<div class="row info">
+	  		<a href="" class="text-center col-2"><i class="fa fa-map-marker-alt fa-2x"></i></a>
+			<p class="lead col-9 my-0 py-0">09098375045</p></div>
+			<div class="row info">
+	  		<a href="" class="text-center col-2"><i class="fa fa-map-marker-alt fa-2x"></i></a>
+			<p class="lead col-9 my-0 py-0">thegleague01@gmail.com</p></div>
+		    <div class="info2 offset-1">
+		    <a href=""><i class="fab fa-facebook fa-lg"></i></a>
+	    	<a href=""><i class="fab fa-instagram fa-lg"></i></a>
+	    	<a href=""><i class="fab fa-twitter fa-lg"></i></a></div>
+			</div>
+		</div>
+		</div>
+
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+<!--End Footer -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script src="owlcarousel\dist\owl.carousel.min.js"></script>
+    <script type="text/javascript">
+    	$(function(){
+    	$('.loop').owlCarousel({
+        center: true,
+        items:2,
+        loop:true,
+        margin:75,
+        dots: false,
+        autoplay: true,
+        autoPlay: true,
+        responsiveClass:true,
+	    responsive:{
+        1000:{
+            items:3,
+        }
+    }
+    	})
+	}); 
+    </script>
+	<script type="text/javascript">
+		function openNav() {
+		  document.getElementById("myNav").style.display = "block";
+		}
+
+		function closeNav() {
+		  document.getElementById("myNav").style.display = "none";
+		}
+	</script>
+     
+  </body>
+</html>
