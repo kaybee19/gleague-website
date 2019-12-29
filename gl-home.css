@@ -93,11 +93,11 @@ Credits to Connor Atherton --*/
     transition: .75s;
 }
 
-#nav .fab   {
+#nav .fa   {
     color: #f30009;
 }
 
-#nav .fab:hover   {
+#nav .fa:hover   {
     color: white;
 }
 
