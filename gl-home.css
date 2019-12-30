@@ -301,7 +301,7 @@ Credits to Connor Atherton --*/
 }
 
 #hero .lead	{
-	font-size: 1rem;
+	font-size: .8rem;
 }
 
 #hero .btn	{
@@ -833,7 +833,7 @@ b {
 }
 
 #high .head 	{
-	font-size: 4rem;
+	font-size: 3rem;
 	margin: 0rem 0rem 3rem;
 	opacity: .075!important;
 }
@@ -985,6 +985,10 @@ video {
 /*-- Old devices (landscape phones, 380px and up) --*/
 
 @media (min-width: 400px) {
+
+#hero .lead	{
+	font-size: 1rem;
+}
 
 #high .head 	{
 	font-size: 5rem;
