@@ -1,6 +1,12 @@
 *
+
+@font-face {
+  font-family: 'Candara';
+    src: url('font/Candara.ttf');
+}
+
 body {
-    font-family: Candara;
+    font-family: 'Candara';
     font-size: 1rem;
     line-height: 2rem;
     letter-spacing: .075rem;
