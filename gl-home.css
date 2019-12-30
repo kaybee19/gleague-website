@@ -1,12 +1,22 @@
 *
 
+@font-face	{
+}
+
+@font-face {
+  font-family: 'BigNoodleTitling';
+  src: url('font/big_noodle_titling.ttf'); /* IE9 Compat Modes */
+
+     }
+
 @font-face {
   font-family: 'Candara';
     src: url('font/Candara.ttf');
-}
 
-body {
-    font-family: Candara;
+  }
+
+body	{
+	font-family: 'Candara';
     font-size: 1rem;
     line-height: 2rem;
     letter-spacing: .075rem;
