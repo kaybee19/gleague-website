@@ -585,7 +585,7 @@ b {
 
 .btn-outline-light	{
 	border-color: white!important;
-	border-radius: 0;
+	border-radius: 1rem;
 	margin: 0rem 2rem 2rem;
 	padding: .5rem 2rem .5rem;
 }
@@ -604,7 +604,6 @@ b {
 }
 
 #games .btn-danger	{
-	border-radius: 0;
 	padding: .5rem;
 	font-size: 1rem; 
 }
@@ -1368,7 +1367,6 @@ video {
 }
 
 #games .btn-danger	{
-	border-radius: 0;
 	padding: .5rem 1rem .5rem;
 	font-size: 1.25rem; 
 }
