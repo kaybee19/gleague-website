@@ -808,6 +808,10 @@ b {
 	background-position: bottom;
 }
 
+#high .container {
+	position: relative;
+}
+
 #high-tab	{
 	border: 0;
 	font-weight: bolder;
