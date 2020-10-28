@@ -809,7 +809,8 @@ b {
 }
 
 #high .container {
-	position: relative;
+	overflow: hidden;
+	position: relative
 }
 
 #high-tab	{
